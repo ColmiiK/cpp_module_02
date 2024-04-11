@@ -6,7 +6,7 @@
 /*   By: alvega-g <alvega-g@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 16:45:38 by alvega-g          #+#    #+#             */
-/*   Updated: 2024/04/11 11:10:16 by alvega-g         ###   ########.fr       */
+/*   Updated: 2024/04/11 11:32:48 by alvega-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@
 class Fixed {
 	private:
 		int value;
-		static const int bits;
+		static const int bits = 8;
 	public:
 		Fixed( void ); // Default constructor
 		Fixed ( const Fixed& source ); // Copy constructor
