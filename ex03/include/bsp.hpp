@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Point.hpp                                          :+:      :+:    :+:   */
+/*   bsp.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvega-g <alvega-g@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/25 10:27:05 by alvega-g          #+#    #+#             */
-/*   Updated: 2024/04/25 11:30:59 by alvega-g         ###   ########.fr       */
+/*   Created: 2024/04/25 11:38:27 by alvega-g          #+#    #+#             */
+/*   Updated: 2024/04/25 11:44:45 by alvega-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef POINT_HPP
-# define POINT_HPP
+#ifndef BSP_H
+# define BSP_H
 
-#include <Fixed.hpp>
-#include <iostream>
+#include <Point.hpp>
 
-class Point {
-	private:
-		const Fixed _x;
-		const Fixed _y;
-	public:
-		Point( void );
-		Point( const float x, const float y );
-		Point( const Point &source );
-		Point& operator=( const Point &source );
-		~Point( void );
-		
-		Fixed getX( void ) const;
-		Fixed getY( void ) const;
-};
+float area (const Point p1, const Point p2, const Point p3);
+bool bsp(const Point a, const Point b, const Point c, const Point point);
 
 #endif

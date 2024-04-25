@@ -1,6 +1,6 @@
 #Variables
 
-NAME = fixed
+NAME = bsp
 INCLUDE = include
 SRC_DIR = src/
 OBJ_DIR = obj/
@@ -22,7 +22,7 @@ WHITE = $(shell tput setaf 7)
 
 #Sources
 	
-SRC_FILES = main Fixed
+SRC_FILES = main Fixed Point bsp
 
 SRC = $(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC_FILES)))
 OBJ = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
