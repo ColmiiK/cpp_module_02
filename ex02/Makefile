@@ -4,7 +4,7 @@ NAME = fixed
 INCLUDE = include
 SRC_DIR = src/
 OBJ_DIR = obj/
-CC = c++
+CC = clang++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 AR = ar rcs
 

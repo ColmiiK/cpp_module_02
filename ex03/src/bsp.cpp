@@ -6,7 +6,7 @@
 /*   By: alvega-g <alvega-g@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 10:56:26 by alvega-g          #+#    #+#             */
-/*   Updated: 2024/04/25 11:47:49 by alvega-g         ###   ########.fr       */
+/*   Updated: 2024/06/04 11:21:28 by alvega-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static float area(const Point p1, const Point p2, const Point p3) {
     float x3 = p3.getX().toFloat();
     float y3 = p3.getY().toFloat();
 
-    return 0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2));
+    return 0.5 * std::abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2));
 }
 
 bool bsp(const Point a, const Point b, const Point c, const Point point) {
